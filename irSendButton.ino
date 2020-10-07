@@ -27,29 +27,3 @@ void ascii(int c){
       delay(500);
   }
 
-/*
-void ascii(int c){
-  on(32);
-  (c & 0x01)? delayMicroseconds((17+9)*32):on(32);
-  (c & 0x02)? delayMicroseconds((17+9)*32):on(32);
-  (c & 0x04)? delayMicroseconds((17+9)*32):on(32);
-  (c & 0x08)? delayMicroseconds((17+9)*32):on(32);
-  (c & 0x10)? delayMicroseconds((17+9)*32):on(32);
-  (c & 0x20)? delayMicroseconds((17+9)*32):on(32);
-  (c & 0x40)? delayMicroseconds((17+9)*32):on(32);
-  (c & 0x80)? delayMicroseconds((17+9)*32):on(32);
-  }
-*/
-
-/*  
-void loop(){
-  on(32);
-  //1000-0010 0x41 'A'
-  //0111-1101
-  delayMicroseconds((17+9)*32); //0
-  on(32*5);                      //11111
-  delayMicroseconds((17+9)*32); //0
-  on(32);                       //1
-  delay(200);
-  }
-*/ 
