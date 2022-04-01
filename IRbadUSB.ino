@@ -21,7 +21,9 @@ void  loop ( )
   if (irrecv.decode(&results)) { 
       Serial.println(results.value, HEX);
       if (results.value==0xFF48B7)
-          Keyboard.println("Hello IRBadUSB!");
+          Keyboard.println("Hello IRBadUSB! #0");
+      if (results.value==0xFF906F)
+          Keyboard.println("Hello IRBadUSB! #1");
       irrecv.resume();            
   }
 }
